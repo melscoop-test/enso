@@ -1,10 +1,6 @@
 name: Engine CI
 
-on:
-  push:
-    branches: [main, "release/*"]
-  pull_request:
-    branches: ["*"]
+on: workflow_dispatch
 
 env:
   # Please ensure that this is in sync with graalVersion in build.sbt
